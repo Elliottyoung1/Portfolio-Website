@@ -9,6 +9,7 @@ import revit from "./tech/revit.png";
 import illustrator from "./tech/illustrator.png";
 import autocad from "./tech/autocad.png";
 import Eliott from "./Elliott.jpg";
+import nbs from "./tech/nbs.png";
 
 
 
@@ -28,5 +29,6 @@ export {
   illustrator,
   defaultjob,
   Eliott,
+  nbs,
   
 };
