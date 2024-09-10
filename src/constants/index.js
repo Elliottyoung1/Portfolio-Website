@@ -327,10 +327,29 @@ import {
       description: "",
       tags: [{ name: "North Tyneside Council", color: "text-yellow-500" }, { name: "2024", color: "text-green-500" }],
       images: [
-        "assets/works/NTC/Parkside/100.jpg",
-        "assets/works/NTC/Nursey/110.jpg",
-        "assets/works/NTC/Nursey/300.jpg",
-        "assets/works/NTC/Nursey/310.jpg",
+        
+        "assets/works/NTC/Swindale/22-004-NTC-DR-015-Site-House Setting Out Plan.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-111-C3-Block 1-General Arrangement Plan.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-112-C3-Block 1-External Brick Setting Out.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-113-C2-Block 1-Construction Plans.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-114-C4-Block 1-Partition & Floor Build Up.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-115-C2-Block 1-Finishes & Fittings Plans.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-116-C3-Block 1-Elevations.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-117-Block 1-Sections.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-118-Block 1-Stair Detail.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-150-C2-Block 5-Substructure Vent Layout Plan.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-151-C2-Block 5-General Arrangement Plan.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-152-Block 5-Roof Plan.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-153-Block 5-External Brick Setting Out.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-154-C2-Block 5-Construction Plans.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-156-C4-Block 5-Partition & Floor Build Up.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-157-Block 5-Finishes & Fittings Plans.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-158-C3-Block 5-Elevations.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-159-C2-Block 5-Sections.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-160-Block 5-Stair Detail.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-DR-171-C3-Typical-Construction Details.jpg",
+        "assets/works/NTC/Swindale/22-004-NTC-SH-155-Block 5-Schedules.jpg",
+
       ],
       
       
