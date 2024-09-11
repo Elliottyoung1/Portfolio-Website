@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import Modal from 'react-modal';
+import InnerImageZoom from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'; // Import the styles for the zoom functionality
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion'
+import { fadeIn, textVariant } from '../utils/motion';
 
 Modal.setAppElement('#root');
 
@@ -72,14 +74,12 @@ const ProjectCard = ({
   );
 };
 
-
 const Works = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openModal = (project) => {
-    console.log("Project clicked:", project); // Log to ensure the click is registered
     setSelectedProject(project);
     setCurrentImageIndex(0);
     setModalIsOpen(true);
@@ -115,7 +115,7 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          Following projects showcases my skills and experience through real-world examples of my work. Each project contains a gallery of pictures. The projects reflect my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </p>
       </div>
 
@@ -152,20 +152,29 @@ const Works = () => {
             </div>
             
             <div className='mt-5 w-full flex justify-center items-center'>
-            <motion.div whileTap={{ scale: 0.8 }} className="flex justify-center mt-4">
-              <button onClick={showPreviousImage} disabled={currentImageIndex === 0} className='text-white arrow-button mx-2'>
-                &lt;
-              </button>
-              </motion.div>
-              <img
-                src={selectedProject.images[currentImageIndex]}
-                alt='project_image'
-                className=' h-auto object-cover max-h-[1200px] rounded-2xl'
-              />
               <motion.div whileTap={{ scale: 0.8 }} className="flex justify-center mt-4">
-              <button onClick={showNextImage} disabled={currentImageIndex === selectedProject.images.length - 1} className='text-white arrow-button mx-2'>
-                &gt;
-              </button></motion.div>
+                <button onClick={showPreviousImage} disabled={currentImageIndex === 0} className='text-white arrow-button mx-2'>
+                  &lt;
+                </button>
+              </motion.div>
+
+              {/* Zoomable Image */}
+              <div className="relative h-auto object-cover max-h-[1200px] rounded-2xl">
+                <InnerImageZoom
+                  src={selectedProject.images[currentImageIndex]} 
+                  // zoomSrc={selectedProject.images[currentImageIndex]} 
+                  zoomType="click" 
+                  zoomPreload={true}
+                  zoomScale={1}
+                  
+                />
+              </div>
+
+              <motion.div whileTap={{ scale: 0.8 }} className="flex justify-center mt-4">
+                <button onClick={showNextImage} disabled={currentImageIndex === selectedProject.images.length - 1} className='text-white arrow-button mx-2'>
+                  &gt;
+                </button>
+              </motion.div>
             </div>
           </div>
         </Modal>
