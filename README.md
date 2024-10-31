@@ -24,3 +24,10 @@ This portfolio site serves as a showcase for an architectural client, leveraging
 2. **run npm run deploy in the terminal in the directory**:
    ```terminal
    - npm run deploy
+
+** Note that you must be in the deployment branch for this to work
+
+## How to Run Dev Server For Future Guide
+1. **Run in visual studio code the following code to deploy**:
+   ```bash
+   - npm run dev
