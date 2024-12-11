@@ -64,7 +64,10 @@ This portfolio site serves as a showcase for an architectural client, leveraging
 2. **run npm run deploy in the terminal in the directory**:
    ```terminal
    - npm run deploy
-   
+
+     
+3. **Make sure images are in the public folder otherwise it wont be hashed!**:
+
 ** Note that you must be in the deployment branch for this to work
 
 ** You can also just run `npm run build` to build the project and test for errors before deploy
